@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Social Media App</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="card p-5 text-center rounded-4 mb-5 bg-dark">
+            <h1 class="text-white fw-bolder">Social Media App</h1>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card p-5 rounded-4 w-100 bg-dark">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label text-white"
+                >User Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="userName"
+                aria-describedby="userName"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label text-white"
+                >Title</label
+              >
+              <input
+                type="text"
+                class="form-control text-capitalize background"
+                id="title"
+                aria-describedby="title"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label text-white"
+                >Description</label
+              >
+              <input
+                type="text"
+                class="form-control text-capitalize background"
+                id="description"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label text-white"
+                >Text Color</label
+              >
+              <div class="colorDiv d-flex align-items-center gap-3">
+                <input type="color" id="color" />
+                <button class="btn btn-secondary py-0" onclick="colorPicker()">
+                  Select
+                </button>
+              </div>
+            </div>
+
+            <label for="exampleInputPassword1" class="form-label text-white"
+              >Background</label
+            >
+            <div class="mb-3 d-flex justify-content-evenly">
+              <img
+                src="./Assets/1.jfif"
+                onclick="selectedImg('./Assets/1.jfif')"
+                class="bg-image"
+                alt=""
+                height="40px"
+                width="40px"
+              />
+              <img
+                src="./Assets/2.jfif"
+                onclick="selectedImg('./Assets/2.jfif')"
+                class="bg-image"
+                alt=""
+                height="40px"
+                width="40px"
+              />
+              <img
+                src="./Assets/3.jfif"
+                onclick="selectedImg('./Assets/3.jfif')"
+                class="bg-image"
+                alt=""
+                height="40px"
+                width="40px"
+              />
+              <img
+                src="./Assets/4.jpg"
+                onclick="selectedImg('./Assets/4.jpg')"
+                class="bg-image"
+                alt=""
+                height="40px"
+                width="40px"
+              />
+              <img
+                src="./Assets/5.jpg"
+                onclick="selectedImg('./Assets/5.jpg')"
+                class="bg-image"
+                alt=""
+                height="40px"
+                width="40px"
+              />
+              <img
+                src="./Assets/6.jpg"
+                onclick="selectedImg('./Assets/6.jpg')"
+                class="bg-image"
+                alt=""
+                height="40px"
+                width="40px"
+              />
+              <img
+                src="./Assets/7.jpeg"
+                onclick="selectedImg('./Assets/7.jpeg')"
+                class="bg-image"
+                alt=""
+                height="40px"
+                width="40px"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-secondary"
+              onclick="submitpost()"
+            >
+              Post
+            </button>
+          </div>
+        </div>
+        <div class="col-8" id="postListing"></div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/1c074bcd7a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="pooper.js"></script>
+    <script src="bootstrapscript.js"></script>
+    <script src="bundle.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
